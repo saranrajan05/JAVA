@@ -1,0 +1,140 @@
+(a+b)^2------------>
+
+import java.util.Scanner;
+
+class Main {
+    int display(int a,int b)
+    {
+        return a*a + b*b + 2*a*b;
+    }
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      Main m = new Main();
+      int a = input.nextInt();
+     int b= input.nextInt();
+     System.out.println(m.display(a,b));
+    }
+}
+
+
+switch---------------------->
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int a = input.nextInt();
+     switch(a){
+         case 1:
+             System.out.println("sun");
+             break;
+        case 2:
+            System.out.println("tue");
+     }
+    }
+}
+
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int age = input.nextInt();
+     if(age>18)
+     {
+         System.out.println("Eligible");
+     }
+     else
+       System.out.println("Not Eligible");
+     
+    }
+}
+
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int marks = input.nextInt();
+      int income = input.nextInt();
+     if(marks>85)
+     {
+       if(income<500000)
+       {
+           System.out.println("Eligible");
+    } 
+     else
+       System.out.println("Not Eligible");
+     
+    }
+}
+}
+
+
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int marks = input.nextInt();
+      int income = input.nextInt();
+     if(marks>85 && income<500000)
+     {
+       
+           System.out.println("Eligible");
+    } 
+     else
+       System.out.println("Not Eligible");
+     
+}
+}
+
+
+
+class Main {
+    public static void main(String[] args) {
+        int arr[]={1,4,5,8,9};
+        int sum = 0; 
+        for(int i=0;i<arr.length;i++)
+        {
+            sum += arr[i];
+            System.out.println(sum);
+        }
+    }
+}
+
+
+
+printing single dimentional array---------------------->
+class Main {
+    public static void main(String[] args) {
+        int arr[]={1,4,5,8,9};
+        int count = 0; 
+        for(int i=0;i<arr.length;i++)
+        {
+            count++;
+            System.out.println(count);
+        }
+    }
+}
+
+
+Printing multidimensional array-------------------->
+
+class Main {
+    public static void main(String[] args) {
+        int arr[][]={{1,4,5,8,9},{11,12,13,14,15}};
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+
+question:  
