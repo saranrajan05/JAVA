@@ -1,0 +1,7 @@
+class Main {
+      public static void main(String[] args) {
+       String str="Java Programming";
+       System.out.println("Index of'Prog':"+str.indexOf("Prog"));
+       System.out.println("Index of 'z':"+str.indexOf('z'));//not found
+      }
+    }
