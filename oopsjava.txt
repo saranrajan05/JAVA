@@ -1,0 +1,22 @@
+class Main {
+public static void main(String[] args){
+    //non-static
+    Objectoriented ref=new Objectoriented();
+    System.out.println("Nonstatic var:"+ref.name);
+    System.out.println("Nonstatic var:"+ref.Rollno);
+    //static member
+    System.out.println("static var:"+Objectoriented.a);
+    Objectoriented.Display();
+}
+}
+class Objectoriented{
+    //non-static members//using object
+    String name="java";
+    String Rollno="12CA01";
+    //static members//classname,membername
+    static int a=10;
+    public static void Display(){
+        System.out.println("Static Method");
+        
+    }     
+}
