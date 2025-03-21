@@ -1,0 +1,40 @@
+package Payment;
+
+import Payment.CreaditUpi;
+import Payment.Gpay;
+import Payment.Topayvia;
+
+class Topayvia{
+	void pay(int amount) {
+		System.out.println("In hand amount:"+amount);
+	}
+}
+class CreaditUpi extends Topayvia{
+	void pay(int amount) {
+		System.out.println("Upipayment:"+amount);
+	
+	}
+}
+class Gpay extends Topayvia{
+	void pay(int amount) {
+		System.out.println("Gpay:"+amount);
+	
+	}
+}
+class Paytm extends Topayvia{
+	void pay(int amount) {
+		System.out.println("Paytm:"+amount);
+	}
+}
+ public class Payment {
+	public static void main(String[] args){
+		Topayvia ref;
+		ref = new CreaditUpi();
+		ref.pay(2000);
+		ref=new Gpay();
+		ref.pay(3000);
+		ref=new Paytm();
+		ref.pay(5000);
+		
+	}
+}

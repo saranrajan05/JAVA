@@ -1,0 +1,42 @@
+package mypro1;
+
+class Shoppingitems{
+
+	void additems(String item_name,int price){
+
+		System.out.println("itemname is:"+item_name+"price is:"+price);
+
+	}
+
+	void additems (String item_name,int price,int item_quantity){
+
+		int totalprice=price*item_quantity;
+
+		System.out.println("item name is:"+item_name+"quantity:"+item_quantity+"totalprice"+totalprice);
+
+	}
+
+		
+
+	void additems(String item_name,int price,int item_quantity,int discount){
+
+		
+
+	}
+
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Shoppingitems ref=new Shoppingitems();
+
+		ref.additems("laptop", 50000);
+
+		ref.additems("keyboard",1000,3);
+
+	}
+
+}
+
